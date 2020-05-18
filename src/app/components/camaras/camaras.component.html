@@ -1,0 +1,12 @@
+<div style="width: 63rem; margin:0 auto;">
+  <li class="float-left m-4" *ngFor="let camara of items" style="list-style-type: none;">
+    <div class="card" style="width: 18rem; min-height:38.125rem;">
+      <img class="card-img-top" src="{{ camara.img }}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{ camara.nombre }}</h5>
+        <p class="card-text">{{ camara.bio }}</p>
+        <a routerLink="/camara/{{camara.id}}" class="btn btn-primary" style="position: absolute; bottom: 1rem; width: 15.3rem;">Go to pokémon</a>
+      </div>
+    </div>
+  </li>
+</div>
